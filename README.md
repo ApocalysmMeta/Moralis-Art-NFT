@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Moralis Mutants NFT Collection | Generative Art Engine
 
 🧟‍♀️🧟‍♂️ Welcome to Rekt City on behalf of its horribly mutated survivors. 🧟‍♀️🧟‍♂️
@@ -57,6 +56,3 @@ This injects the mutagen that will bring your Moralis mutants ALIVE!
 - [Moralis Discord](https://discord.com/channels/819584798443569182)
 - [Moralis GitHub](https://github.com/MoralisWeb3)
 - [Moralis YouTube](https://www.youtube.com/channel/UCgWS9Q3P5AxCWyQLT2kQhBw)
-=======
-# Moralis-Art-NFT
->>>>>>> 5a14b1f9edaaacfda3398c08c8a5ea878c618026
