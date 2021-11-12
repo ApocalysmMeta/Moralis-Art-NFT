@@ -11,9 +11,17 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 contract NFTContract is ERC1155, Ownable {
     using SafeMath for uint256;
 
+    string public baseURI;
+    uint256 public cost = 1;
+    uint256 public maxSupply = 1000;
+    uint256 public maxMintAmount = 20;
+    uint256 public nftPerAddressLimit = 3;
+
+
+
     constructor()
         ERC1155(
-            "ipfs://Qmc3QjMeT3BiRwrMmT7AjqggDUpqSXgPoRHvv1zPmM5X8d/metadata/{id}.json"
+            "ipfs://Qmb7LCtYR9X5LGzQRTV5WnwzTwKkzE6RB7sMhRdmHBxC97/metadata/{id}.json"
         )
     {
         // account, token_id, number

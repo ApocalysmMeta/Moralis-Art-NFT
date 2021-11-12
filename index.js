@@ -1,3 +1,4 @@
+
 // utilise Moralis
 const Moralis = require("moralis/node");
 // canvas for image compile
@@ -21,10 +22,10 @@ const canvas = createCanvas(width, height);
 const ctx = canvas.getContext("2d");
 
 // Moralis creds
-const appId = "YOUR_MORALIS_APP_ID";
-const serverUrl = "YOUR_MORALIS_SERVER_URL";
-const masterKey = "YOUR_MORALIS_MASTER_KEY"; // DO NOT DISPLAY IN PUBLIC DIR
-const xAPIKey = "YOUR_X_API_KEY"; // DO NOT DISPLAY IN PUBLIC DIR
+const appId = "nJxM3XOhL8Bt5xxTOe9triSvAcIuxtmUsuCgSVM6";
+const serverUrl = "https://rouaaq6bq5jd.usemoralis.com:2053/server";
+const masterKey = process.env.MORALIS_MASTER_KEY; // DO NOT DISPLAY IN PUBLIC DIR
+const xAPIKey = process.env.APIKey; // DO NOT DISPLAY IN PUBLIC DIR
 // xAPIKey available here: https://deep-index.moralis.io/api-docs/#/storage/uploadFolder
 const api_url = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
 

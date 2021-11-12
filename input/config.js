@@ -123,22 +123,20 @@ const height = 1000;
 // description for NFT in metadata file
 const description = "Moralis Mutants - Survivors of Rekt City";
 // base url in case no unique metadata file i.e IPFS
-const baseImageUri = "YOUR_MORALIS_SERVER_URL";
+const baseImageUri = "https://rouaaq6bq5jd.usemoralis.com:2053/server";
 // id for edition to start from
 const startEditionFrom = 1;
 // amount of NFTs to generate in edition
-const editionSize = 10;
+const editionSize = 20;
 // prefix to add to edition dna ids (to distinguish dna counts from different generation processes for the same collection)
 const editionDnaPrefix = 0;
 
 // create required weights
 // for each weight, call 'addRarity' with the id and from which to which element this rarity should be applied
 let rarityWeights = [
-  /* 
   addRarity("super_rare", 1, 1),
-  addRarity("rare", 1, 1),
-  */
-  addRarity("original", 1, editionSize),
+  addRarity("rare", 2, 5),
+  addRarity("original", 5, editionSize),
 ];
 
 // create required layers
@@ -159,9 +157,21 @@ const layers = [
 // provide any specific percentages that are required for a given layer and rarity level
 // all provided options are used based on their percentage values to decide which layer to select from
 addRarityPercentForLayer("original", "Eyes", {
+  super_rare: 10,
+  rare: 30,
+  original: 60,
+});
+
+addRarityPercentForLayer("rare", "Eyes", {
   super_rare: 0,
-  rare: 0,
-  original: 100,
+  rare: 100,
+  original: 0,
+});
+
+addRarityPercentForLayer("super_rare", "Eyes", {
+  super_rare: 60,
+  rare: 40,
+  original: 0,
 });
 
 module.exports = {
